@@ -31,7 +31,7 @@ public class SwaggerConfig {
                 .pathMapping("/")
                 .select()
                 //扫描的那个接口的包
-                .apis(RequestHandlerSelectors.basePackage(com.java.spring_swagger.controller))
+                .apis(RequestHandlerSelectors.basePackage("com.java.spring_swagger.controller"))
                 .paths(PathSelectors.any())
                 .build().apiInfo(new ApiInfoBuilder()
                         .title("SpringBoot整合Swagger使用")
